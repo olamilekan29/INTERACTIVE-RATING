@@ -16,20 +16,13 @@ body{
     border-radius: 20px;
     height: 350px;
     width: 390px;
-    
    margin-left: 30px !important;
-   
     margin: auto;
 }
-.rating-box img{
-    margin-left: 30px !important;
-    margin-top: 30px !important;
-    margin-bottom: 20px !important;
-}
+
 .rating-box h1{
     font-size: 22px;
     color: hsl(0, 0%, 100%);
-    
     margin-bottom: 20px !important;
     margin-left: 30px !important;
 }
@@ -40,16 +33,39 @@ body{
     margin-left: 30px !important;
     line-height: 2;
 }
-.rating-box .stars{
-    display: flex;
+/* .rating-box .stars{
+    display: grid;
     align-items: center;
     gap: 58px;
     color: #e6e6e6;
     cursor: pointer;
     justify-content:center;
     margin-bottom: 40px !important;
+} */
+.stars{
+    display: flex;
+    gap: 15px;
+      align-items: center;
+      justify-content: center;
 }
-.rating-box button{
+.stars button{
+    display: flex;
+    align-items: center;
+    background-color:    hsl(216, 12%, 54%);
+    color: #e6e6e6;
+    cursor: pointer;
+    justify-content:center;
+    margin-bottom: 30px !important;
+    border-radius: 50%;
+    font-size: 20px;
+    border: none;
+
+}
+.stars button:hover{
+    color: #fff;
+    background-color: hsl(25, 97%, 53%);
+}
+.review button{
     margin-left: 30px !important;
     width: 320px;
     height: 40px;
@@ -59,4 +75,24 @@ body{
     text-transform: uppercase;
     border: none;
     cursor: pointer;
+}
+.review button:hover{
+background: white;
+color: hsl(25, 97%, 53%);
+}
+
+@media (max-width:990px){
+    .rating-box{
+        height: 330px;
+        width: 300px;
+        margin: 0 !important; 
+          
+    }
+    .review button{
+        width: 240px; 
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-left: 30px !important;
+        margin-bottom: 0px !important;
+    }
 }

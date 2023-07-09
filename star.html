@@ -8,12 +8,17 @@
 <body>
     <div class="box">
         <div class="image"><img src="images/illustration-thank-you.svg" alt=""></div>
-        <div class="selection">You selected 4 out of 5</div>
+        <div class="selection">You selected <span id="rated"></span> out of 5</div>
         <div class="remark">
             <h3>Thank You</h3>
-            <h4>we appriciate tou taking the time to take a rating.<br> if you need more support,dont hessitate to <br> get in touch!</h4>
+            <h4>we appriciate tou taking the time to take a rating. if you need more support,dont hessitate to  get in touch!</h4>
         </div>
     </div>
 
+    <script>
+        let rate = localStorage.getItem("rate")
+        console.log(rate)
+        rated.innerHTML = rate
+    </script>
 </body>
 </html>
